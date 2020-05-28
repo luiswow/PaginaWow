@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: black;
+    color:white;
+}
+.ir-arriba{
+    display:inline-block;
+    padding: 20px;
+    background: #024959;
+    font-size:20px ;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

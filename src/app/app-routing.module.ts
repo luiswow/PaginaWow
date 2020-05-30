@@ -22,6 +22,7 @@ import { SacerdpsComponent } from './sacerdps/sacerdps.component';
 import { SacerhealComponent } from './sacerheal/sacerheal.component';
 import { LockComponent } from './lock/lock.component';
 import { LockdpsComponent } from './lockdps/lockdps.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 const routes: Routes = [ 
@@ -31,23 +32,23 @@ const routes: Routes = [
   {path:'addons',component:AddonsComponent},
   {path:'talentos',component:TalentosComponent},
   {path:'paladin',component:PalaComponent},
-  {path:'talentos/war',component:WarComponent},
-  {path:'talentos/war/dps',component:WarfuryComponent},
-  {path:'talentos/war/tanque',component:ProtectwarComponent},
-  {path:'talentos/paladin',component:PalaComponent},
-  {path:'talentos/paladin/dps',component:PalrepComponent},
-  {path:'talentos/paladin/tanque',component:PaltankComponent},
-  {path:'talentos/paladin/heal',component:PalhealComponent},
-  {path:'talentos/mago',component:MagoComponent},
-  {path:'talentos/mago/dps',component:MagodpsComponent},
-  {path:'talentos/chaman',component:ChamanComponent},
-  {path:'talentos/chaman/heal',component:ChamihealComponent},
-  {path:'talentos/chaman/dps',component:ChamidpsComponent},
-  {path:'talentos/sacerdote',component:SacerComponent},
-  {path:'talentos/sacerdote/dps',component:SacerdpsComponent},
-  {path:'talentos/sacerdote/heal',component:SacerhealComponent},
-  {path:'talentos/brujo',component:LockComponent},
-  {path:'talentos/brujo/dps',component:LockdpsComponent}
+  {path:'talentos/war',component:WarComponent ,data: { animation: 'isRight' } },
+  {path:'talentos/war/dps',component:WarfuryComponent,data: { animation: 'isLeft' } },
+  {path:'talentos/war/tanque',component:ProtectwarComponent,data: { animation: 'isRight' } },
+  {path:'talentos/paladin',component:PalaComponent,data: { animation: 'isLeft' } },
+  {path:'talentos/paladin/dps',component:PalrepComponent,data: { animation: 'isRight' } },
+  {path:'talentos/paladin/tanque',component:PaltankComponent,data: { animation: 'isLeft' } },
+  {path:'talentos/paladin/heal',component:PalhealComponent,data: { animation: 'isRight' } },
+  {path:'talentos/mago',component:MagoComponent,data: { animation: 'isLeft' } },
+  {path:'talentos/mago/dps',component:MagodpsComponent ,data: { animation: 'isRight' } },
+  {path:'talentos/chaman',component:ChamanComponent ,data: { animation: 'isLeft' } },
+  {path:'talentos/chaman/heal',component:ChamihealComponent ,data: { animation: 'isLeft' } },
+  {path:'talentos/chaman/dps',component:ChamidpsComponent ,data: { animation: 'isRight' } },
+  {path:'talentos/sacerdote',component:SacerComponent ,data: { animation: 'isRight' } },
+  {path:'talentos/sacerdote/dps',component:SacerdpsComponent ,data: { animation: 'isLeft' } },
+  {path:'talentos/sacerdote/heal',component:SacerhealComponent ,data: { animation: 'isRight' } },
+  {path:'talentos/brujo',component:LockComponent ,data: { animation: 'isLeft' } },
+  {path:'talentos/brujo/dps',component:LockdpsComponent ,data: { animation: 'isRight' } },
 
 
 

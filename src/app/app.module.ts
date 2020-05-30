@@ -14,10 +14,26 @@ import { ChamanComponent } from './chaman/chaman.component';
 import { LockComponent } from './lock/lock.component';
 import { MagoComponent } from './mago/mago.component';
 import { SacerComponent } from './sacer/sacer.component';
-
+import { ArmaswarComponent } from './armaswar/armaswar.component';
+import { ProtectwarComponent } from './protectwar/protectwar.component';
+import { WarfuryComponent } from './warfury/warfury.component';
+import { PalrepComponent } from './palrep/palrep.component';
+import { PaltankComponent } from './paltank/paltank.component';
+import { PalhealComponent } from './palheal/palheal.component';
+import { ClasesComponent } from './clases/clases.component';
+import { MagodpsComponent } from './magodps/magodps.component';
+import { ChamihealComponent } from './chamiheal/chamiheal.component';
+import { ChamidpsComponent } from './chamidps/chamidps.component';
+import { SacerdpsComponent } from './sacerdps/sacerdps.component';
+import { SacerhealComponent } from './sacerheal/sacerheal.component';
+import { LockdpsComponent } from './lockdps/lockdps.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
+    RightPageComponent,
+    LeftPageComponent,
+    AboutPageComponent,
     ClientesComponent,
     HeaderComponent,
     LeveoComponent,
@@ -28,11 +44,26 @@ import { SacerComponent } from './sacer/sacer.component';
     ChamanComponent,
     LockComponent,
     MagoComponent,
-    SacerComponent
+    SacerComponent,
+    ArmaswarComponent,
+    ProtectwarComponent,
+    WarfuryComponent,
+    PalrepComponent,
+    PaltankComponent,
+    PalhealComponent,
+    ClasesComponent,
+    MagodpsComponent,
+    ChamihealComponent,
+    ChamidpsComponent,
+    SacerdpsComponent,
+    SacerhealComponent,
+    LockdpsComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
